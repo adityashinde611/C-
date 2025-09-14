@@ -412,9 +412,3 @@ Perfect idea ⚡— a table is the clearest way to capture **C vs C++ difference
 | **Compatibility**                               | Base language                                                    | Mostly backward compatible with C (but not fully)                                                                        |
 
 ---
-
-👉 That table covers everything from **paradigm → memory → OOP → modern features**.
-
-Do you want me to also create a **second table just for “Modern C++ vs C”** (highlighting differences like `nullptr`, `auto`, smart pointers, templates, lambdas, concepts, etc.), or keep it as the generic C vs C++ comparison?
-
-
