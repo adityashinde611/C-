@@ -412,3 +412,4 @@ Perfect idea ⚡— a table is the clearest way to capture **C vs C++ difference
 | **Compatibility**                               | Base language                                                    | Mostly backward compatible with C (but not fully)                                                                        |
 
 ---
+### **19. Data Structures & Algorithms in C/C++**
