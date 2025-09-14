@@ -379,5 +379,42 @@
 * Debugging & profiling on RTOS (JTAG, SWO, trace tools)
 
 ---
+Perfect idea ⚡— a table is the clearest way to capture **C vs C++ differences** in your notes. Here’s a structured one you can copy straight into your notebook (or Markdown file):
+
+---
+### **1. Basics of C / C++**
+# **C vs C++**
+
+| Aspect                                          | **C**                                                            | **C++**                                                                                                                  |
+| ----------------------------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Paradigm**                                    | Procedural (function-oriented)                                   | Multi-paradigm: Procedural + Object-Oriented + Generic + Functional (modern C++)                                         |
+| **History**                                     | Developed by Dennis Ritchie in 1972 (system programming, Unix)   | Developed by Bjarne Stroustrup in 1983 as “C with Classes”                                                               |
+| **Program Structure**                           | Organized around functions                                       | Organized around objects & classes (though functions are still valid)                                                    |
+| **Standard Library**                            | Small: stdio, stdlib, string, math, etc.                         | Huge: STL (containers, algorithms), iostream, threading, filesystem, etc.                                                |
+| **Data Abstraction**                            | Supports `struct` (data grouping only)                           | Supports `class` (data + methods, encapsulation, inheritance, polymorphism)                                              |
+| **Encapsulation**                               | Not supported directly                                           | Fully supported via classes, private/public/protected access specifiers                                                  |
+| **Inheritance & Polymorphism**                  | Not supported                                                    | Fully supported (virtual functions, abstract classes, interfaces)                                                        |
+| **Function Overloading / Operator Overloading** | Not supported                                                    | Supported (compile-time polymorphism)                                                                                    |
+| **Memory Management**                           | Manual: `malloc()`, `calloc()`, `free()`                         | `new`, `delete`, RAII, smart pointers (`unique_ptr`, `shared_ptr`)                                                       |
+| **Type Safety**                                 | Weaker (implicit conversions allowed, void\* casts allowed)      | Stronger (explicit casts required, `nullptr` instead of `NULL`)                                                          |
+| **Input/Output**                                | `printf`, `scanf` (fast, format-based)                           | `cin`, `cout`, `getline`, manipulators; also `std::format` (C++20)                                                       |
+| **Error Handling**                              | Error codes, `errno`                                             | Exceptions (`try`, `catch`, `throw`)                                                                                     |
+| **Templates/Generics**                          | Not available                                                    | Powerful template system + generic programming + concepts (C++20)                                                        |
+| **Namespaces**                                  | Not available                                                    | Namespaces and inline namespaces to avoid name clashes                                                                   |
+| **Inline Functions / Macros**                   | Uses preprocessor macros heavily (`#define`)                     | Inline functions, `constexpr`, templates — safer than macros                                                             |
+| **Casting**                                     | Only C-style casts `(type)`                                      | Safer, explicit casts: `static_cast`, `dynamic_cast`, `const_cast`, `reinterpret_cast`                                   |
+| **Const & Immutability**                        | `const` available but less strict                                | `const`, `constexpr`, `mutable`, `consteval` (C++20) — more expressive                                                   |
+| **Object-Oriented Features**                    | None                                                             | Classes, inheritance, polymorphism, encapsulation                                                                        |
+| **Generic Libraries**                           | None                                                             | STL: containers (`vector`, `map`, etc.), algorithms, iterators                                                           |
+| **Multithreading**                              | No standard support (OS APIs only)                               | Standard multithreading library (`std::thread`, mutexes, futures, atomics)                                               |
+| **Compilation**                                 | `.c` files, compiled with `gcc`                                  | `.cpp` files, compiled with `g++` (links C++ stdlib automatically)                                                       |
+| **Use Cases**                                   | System programming, embedded systems, OS kernels, device drivers | Application development, games, GUI apps, financial systems, AI/ML libraries, but also used for system-level programming |
+| **Compatibility**                               | Base language                                                    | Mostly backward compatible with C (but not fully)                                                                        |
+
+---
+
+👉 That table covers everything from **paradigm → memory → OOP → modern features**.
+
+Do you want me to also create a **second table just for “Modern C++ vs C”** (highlighting differences like `nullptr`, `auto`, smart pointers, templates, lambdas, concepts, etc.), or keep it as the generic C vs C++ comparison?
 
 
