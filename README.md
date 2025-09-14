@@ -1,5 +1,5 @@
 
-## **C / C++ Roadmap – Beginner to Advanced**
+## **C / C++ 
 
 ### **1. Basics of C / C++**
 
@@ -253,8 +253,131 @@
 
 ---
 
-⚡ By the time you finish this roadmap, you’ll have **complete mastery from C beginner to Modern C++20+.**
+
+## **Qt, Win32 & RTOS Topics**
 
 ---
 
-Do you want me to **arrange this into a proper “notes skeleton” (like chapters with bullet sub-points for your notebook)** so you can directly start writing, or do you prefer this big roadmap list as-is?
+### **1. Qt Framework (C++ GUI & Application Development)**
+
+#### **Basics**
+
+* Introduction to Qt (cross-platform, signal-slot mechanism)
+* Qt Creator IDE & project structure
+* Qt core modules (`QtCore`, `QtGui`, `QtWidgets`)
+
+#### **Core Concepts**
+
+* Signals & Slots
+* Event loop and event handling
+* Layout management
+* Widgets (QPushButton, QLabel, QLineEdit, QTableWidget, etc.)
+* Dialogs (modal, non-modal, custom dialogs)
+* Menus, toolbars, status bar
+
+#### **Intermediate**
+
+* Model/View architecture (`QTableView`, `QListView`, `QTreeView`)
+* Qt Designer (drag-and-drop UI design)
+* Resource system (`.qrc` files for images, icons)
+* Multithreading in Qt (`QThread`, `QtConcurrent`)
+* Networking (`QTcpSocket`, `QUdpSocket`, `QNetworkAccessManager`)
+* File handling & serialization (`QFile`, `QDataStream`, JSON/XML handling)
+
+#### **Advanced**
+
+* Custom widgets & painting (`QPainter`)
+* Styles & themes (QSS – Qt Style Sheets)
+* MVC patterns in Qt
+* Internationalization (i18n & l10n)
+* Qt Quick / QML (for modern UIs)
+* Integrating with databases (`QSqlDatabase`)
+* Integrating C++ with QML
+* Signals/slots with lambdas (modern Qt)
+* Cross-platform deployment
+
+---
+
+### **2. Win32 API (Windows Programming in C/C++)**
+
+#### **Basics**
+
+* Windows architecture & subsystems
+* WinMain vs main
+* Message loop & event-driven programming
+* Windows handles (HWND, HINSTANCE, HDC)
+* Creating windows (`CreateWindow`, `RegisterClass`)
+* GDI basics (drawing text, lines, shapes)
+
+#### **Core Concepts**
+
+* Message handling (`WM_PAINT`, `WM_SIZE`, `WM_DESTROY`, etc.)
+* Dialog boxes (modal, modeless)
+* Controls (buttons, edit boxes, list boxes, combo boxes)
+* Menus, accelerators, resources (`.rc` files)
+* Keyboard & mouse input
+* Timers
+* File I/O with Win32 API
+* Dynamic link libraries (DLLs)
+
+#### **Intermediate**
+
+* Multithreading (CreateThread, synchronization objects like mutexes, semaphores, events)
+* Memory management (VirtualAlloc, HeapAlloc)
+* Windows registry programming
+* COM basics
+* Shell API (interacting with Explorer, file dialogs)
+
+#### **Advanced**
+
+* GDI+ (advanced graphics)
+* Direct2D/Direct3D basics
+* Windows sockets (Winsock)
+* Interprocess communication (shared memory, named pipes)
+* Hooking & subclassing windows
+* Services programming
+* WinRT/Modern Windows APIs (optional)
+
+---
+
+### **3. RTOS (Real-Time Operating Systems in C/C++)**
+
+#### **Basics**
+
+* What is an RTOS? (hard vs soft real-time, differences from general OS)
+* RTOS kernel concepts
+* Tasks/threads
+* Task scheduling (preemptive, cooperative, round-robin, priority-based)
+
+#### **Core Concepts**
+
+* Task creation & management
+* Context switching
+* Synchronization primitives (semaphores, mutexes, event flags, message queues)
+* Inter-task communication (pipes, mailboxes, shared memory)
+* Interrupt handling
+* Priority inversion & avoidance (priority inheritance, ceiling protocols)
+
+#### **Intermediate**
+
+* Memory management in RTOS (fixed-size block allocation, memory pools)
+* Timer services
+* Real-time clocks & tick interrupts
+* Task states (ready, running, blocked, suspended)
+* Deadlock detection & handling
+* Device drivers in RTOS
+* Power management in embedded RTOS
+
+#### **Advanced**
+
+* Multi-core scheduling in RTOS
+* Real-time networking (RTOS + TCP/IP stack)
+* Real-time file systems
+* Safety-critical systems (MISRA C/C++ guidelines)
+* RTOS case studies (FreeRTOS, VxWorks, QNX, RTEMS, Zephyr)
+* RTOS performance tuning
+* Debugging & profiling on RTOS (JTAG, SWO, trace tools)
+
+---
+
+
